@@ -55,6 +55,11 @@ static void init_rc_in()
 
 #if MOUNT == ENABLED
     update_aux_servo_function(&g.rc_5, &g.rc_6, &g.rc_7, &g.rc_8, &g.rc_10, &g.rc_11);
+
+
+    RC_Channel_aux::move_servo(RC_Channel_aux::k_mount_roll, 500, 0, 1000);
+    RC_Channel_aux::move_servo(RC_Channel_aux::k_mount_tilt, 500, 0, 1000);
+    RC_Channel_aux::move_servo(RC_Channel_aux::k_mount_pan, 500, 0, 1000);
 #endif
 }
 
