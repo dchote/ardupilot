@@ -12,7 +12,7 @@
 //#define DMP_ENABLED ENABLED
 //#define SECONDARY_DMP_ENABLED ENABLED       // allows running DMP in parallel with DCM for testing purposes
 
-//#define FRAME_CONFIG QUAD_FRAME
+#define FRAME_CONFIG TRI_FRAME
 /*
  *  options:
  *  QUAD_FRAME
@@ -24,14 +24,14 @@
  *  HELI_FRAME
  */
 
-//#define FRAME_ORIENTATION X_FRAME
+#define FRAME_ORIENTATION X_FRAME
 /*
  *  PLUS_FRAME
  *  X_FRAME
  *  V_FRAME
  */
 
-//#define CH7_OPTION		CH7_SAVE_WP
+#define CH7_OPTION		CH7_SAVE_TRIM
 /*
  *  CH7_DO_NOTHING
  *  CH7_FLIP
@@ -43,7 +43,7 @@
  */
 
 // Inertia based contollers
-#define RTL_YAW YAW_HOLD
+//#define RTL_YAW YAW_HOLD
 
 //#define MOTORS_JD880
 //#define MOTORS_JD850
@@ -63,3 +63,10 @@
 #define USERHOOK_VARIABLES "UserVariables.h"
 
 //#define LOGGING_ENABLED		DISABLED
+#define HOTT_TELEMETRY
+#define HOTT_TELEMETRY_SERIAL_PORT	2
+#define HOTT_SIM_GPS_SENSOR
+#define HOTT_SIM_EAM_SENSOR
+#define HOTT_SIM_VARIO_SENSOR
+//#define HOTT_SIM_GAM_SENSOR
+//define HOTT_SIM_TEXTMODE
